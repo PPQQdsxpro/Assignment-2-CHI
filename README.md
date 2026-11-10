@@ -2,13 +2,10 @@
 
 研究問題：詞袋分類器能否辨識中文留言的冒犯性表達？引用、反偏見與隱含貶抑等....帶來甚麼判斷困難？
 
-**Python程式集中在 [scripts/](scripts/)，並沒有缺少。** [run_pipeline.py](scripts/run_pipeline.py)包含準備資料、切分、三折交叉驗證、訓練、評估及新文本應用。
-
-## 作業要求與檔案位置
+## 作業檔案位置
 
 | 要求／用途 | 檔案連結 | 內容 |
 |---|---|---|
-| 報告兩種格式 | [report.md](report.md)、[report.pdf](report.pdf) | 學生修訂稿加上指定的反偏見困難段落；正文2,305漢字，含標題表格，不含參考資料與AI聲明 |
 | 標註建模資料 | [data/labeled_data.csv](data/labeled_data.csv) | 1,000則，每類500則；text為文本，label為0或1 |
 | 訓練集 | [data/train_split.csv](data/train_split.csv) | 800則，每類400則 |
 | 保留測試集 | [data/test_split.csv](data/test_split.csv) | 200則，每類100則 |
@@ -23,8 +20,6 @@
 | 訓練好的模型 | [models/cold_logistic.joblib](models/cold_logistic.joblib) | 包含詞彙表、IDF及邏輯迴歸的完整Pipeline |
 | 參數與套件版本 | [output/run_metadata.json](output/run_metadata.json)、[requirements.txt](requirements.txt) | 種子、資料量、版本與原始檔SHA-256 |
 | 最後核查 | [output/final_audit.json](output/final_audit.json) | 樣本量、資料分離、指標、模型預測及必要檔案檢查 |
-
-HTML頁面可展開案例，但**尚未部署為GitHub Pages網站，也不是線上即時分類器**。GitHub通常只顯示HTML原始碼；請選 **Code → Download ZIP**，解壓後用瀏覽器開啟 `output/results.html`。GitHub Pages屬於指引的選做項目。
 
 ## 文中A01、E01、B13等例子在哪裏？
 
