@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "required_files_present": [
+    "README.md",
+    "report.md",
+    "report.pdf",
+    "requirements.txt",
+    "data/labeled_data.csv",
+    "data/train_split.csv",
+    "data/test_split.csv",
+    "data/application_data.csv",
+    "scripts/run_pipeline.py",
+    "scripts/text_features.py",
+    "models/cold_logistic.joblib",
+    "output/evaluation.json",
+    "output/test_predictions.csv",
+    "output/application_predictions.csv",
+    "output/results.html",
+    "output/application_review.html"
+  ],
+  "class_counts": {
+    "labeled_data": {
+      "0": 500,
+      "1": 500
+    },
+    "train_split": {
+      "0": 400,
+      "1": 400
+    },
+    "test_split": {
+      "0": 100,
+      "1": 100
+    },
+    "application_data": {
+      "0": 50,
+      "1": 50
+    }
+  },
+  "exact_duplicates_and_cross_set_overlap": 0,
+  "saved_model_predictions_verified": 300,
+  "accuracy": 0.82,
+  "confusion_matrix": [
+    [
+      75,
+      25
+    ],
+    [
+      11,
+      89
+    ]
+  ],
+  "application_reference_agreement": 0.61,
+  "report_han_characters_excluding_references_and_AI": 2305,
+  "raw_hashes_match": true,
+  "case_source_mappings_match": true,
+  "readme_local_links_exist": true,
+  "limitations": [
+    "Same-source application; not cross-platform validation.",
+    "Existing COLD labels with sampled student review, not all newly annotated.",
+    "HTML exploration pages provided; optional GitHub Pages not deployed.",
+    "Moodle upload remains separate."
+  ]
+}

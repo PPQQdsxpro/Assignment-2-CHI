@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
  model=joblib.load(ROOT/'models/cold_logistic.joblib')
  test=pd.read_csv(ROOT/'output/test_predictions.csv');app=pd.read_csv(ROOT/'output/application_predictions.csv')
+ app.groupby('fine-grained-label').agg(n=('label','size'),agreement=('matches_reference','mean'),mean_p_offensive=('p_offensive','mean')).to_csv(ROOT/'output/application_group_summary.csv',encoding='utf-8-sig')
  assert np.allclose(model.predict_proba(test.text)[:,1],test.p_offensive)
  metrics=json.loads((ROOT/'output/evaluation.json').read_text());weights=pd.read_csv(ROOT/'output/feature_weights.csv')
  names=model.named_steps['tfidf'].get_feature_names_out();coef=model.named_steps['classifier'].coef_[0]
