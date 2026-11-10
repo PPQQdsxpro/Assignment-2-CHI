@@ -32,8 +32,6 @@
 | B01–B28：訓練資料抽查 | [review/training_audit_28.json](review/training_audit_28.json) | [review/user_training_audit_28.json](review/user_training_audit_28.json) |
 | R01–R12：前期規則試標 | [review/reference_labels.json](review/reference_labels.json) | [review/user_review_round1.json](review/user_review_round1.json) |
 
-例如 **A01** 在 `review/application_cases.json` 的 `case_id` 欄，對應 `source_row=604`，來源為 [data/raw/test.csv](data/raw/test.csv)。也可在 `output/application_predictions.csv` 以 `source_file=test.csv`、`source_row=604` 找到預測。E及B案例來自 `data/raw/train.csv`。`source_row`是包含標題列的CSV記錄序號；若文本內有換行，不等同純文字編輯器的物理行數。JSON保留原文，報告引文轉為繁體。
-
 ## 標籤、文本單位與標註規則
 
 一則完整留言為一筆資料，不將同一留言拆散至不同集合。**1＝冒犯**：對個人或群體實施或認同侮辱、貶抑等冒犯。**0＝非冒犯**：未實施上述冒犯，包括一般批評、描述或反對冒犯。這是操作性概括，建模沿用COLD標註。
@@ -44,31 +42,13 @@
 
 ## 資料來源與方法
 
-來源：[COLD官方倉庫](https://github.com/thu-coai/COLDataset)、[原論文](https://aclanthology.org/2022.emnlp-main.796/)。本次使用學生提供的官方CSV副本；原始檔見 [data/raw/](data/raw/)，授權見 [data/COLD-LICENSE.txt](data/COLD-LICENSE.txt)。兩份相同test下載只保留一份。
+來源：[COLD官方倉庫](https://github.com/thu-coai/COLDataset)、[原論文](https://aclanthology.org/2022.emnlp-main.796/)。本次使用學生提供的官方CSV副本；原始檔見 [data/raw/](data/raw/)，授權見 [data/COLD-LICENSE.txt](data/COLD-LICENSE.txt)。
 
 去空白比對後排除27組跨來源同文異標、精確重複、官方test同文及12則規則開發留言，從官方train每類抽500筆。按標籤分層80/20切分，種子42。官方dev僅作重複及標籤衝突稽核。
 
 jieba分詞、移除純標點，不作繁簡轉換、不套通用停用詞清單。單詞TF-IDF（min_df=2）及 LogisticRegression（C=1、max_iter=2000、random_state=42），分類門檻0.5。三折交叉驗證只用800筆訓練資料，各折重新學習詞彙表及IDF。固定單一模型，未依測試結果調參。保留測試準確率82%、Macro-F1約0.819。
 
 官方test按細類0其他非冒犯、1攻擊個人、2攻擊群體、3反偏見各抽25則作應用。二元一致率61%；反偏見組44%不是四類分類準確率。同來源及平衡抽樣限制泛化。[近重複檢查](output/near_duplicate_audit.json)以字元3–5元組餘弦相似度0.65篩查，未找到跨集合候選，但不能排除所有語意改寫。
-
-## 如何重跑程式
-
-使用Python 3.12，在專案根目錄執行；建議先建立獨立虛擬環境：
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/run_pipeline.py
-python scripts/audit_data.py
-python scripts/build_results.py
-python scripts/build_application_review.py
-python scripts/render_report.py
-python scripts/verify_project.py
-```
-
-`run_pipeline.py`重建切分、模型及預測；`audit_data.py`產生近重複檢查及B案例工作紙；`build_results.py`重新載入模型核對預測，產生E案例頁及應用分組摘要；`build_application_review.py`產生A案例頁。人工答案獨立保存在 `user_*.json`，上述程式不改寫它們。
-
-`render_report.py`由同一份Markdown產生PDF及 [報告閱讀頁](output/report.html)，使用Windows微軟正黑體 `C:/Windows/Fonts/msjh.ttc`；其他系統須調整字體路徑。Markdown標記只用於格式，不印在PDF內。字數口徑及數值見 [output/report_check.json](output/report_check.json)。
 
 ## AI使用及提交
 
