@@ -1,0 +1,416 @@
+[
+  {
+    "case_id": "E01",
+    "source_row": 15406,
+    "text": "自身非男同性恋者的生理健全男性作答：喜欢并支持别人男男同性恋，但对于亲自参与标准男男同性恋感到恶心。",
+    "reference": 0,
+    "prediction": 1,
+    "p_offensive": 0.7223103938073688,
+    "top_contributions": [
+      {
+        "word": "男",
+        "contribution": 0.6365
+      },
+      {
+        "word": "恶心",
+        "contribution": 0.5235
+      },
+      {
+        "word": "男性",
+        "contribution": 0.2574
+      },
+      {
+        "word": "喜欢",
+        "contribution": -0.1435
+      },
+      {
+        "word": "但",
+        "contribution": 0.0768
+      },
+      {
+        "word": "感到",
+        "contribution": 0.068
+      },
+      {
+        "word": "别人",
+        "contribution": 0.0579
+      },
+      {
+        "word": "并",
+        "contribution": 0.0532
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 1.6299453607391274,
+    "logit": 0.955950989403295,
+    "out_of_vocabulary": [
+      "亲自",
+      "作答",
+      "健全",
+      "参与",
+      "同性恋者",
+      "标准",
+      "男同性恋",
+      "自身"
+    ],
+    "user_label": "0"
+  },
+  {
+    "case_id": "E02",
+    "source_row": 4855,
+    "text": "是的，所以我说的是自己如果遇到这种事会有种被侵犯隐私，被冒犯的感觉，而不是视频中的女方是因为被侵犯隐私而做出那种行为。",
+    "reference": 0,
+    "prediction": 1,
+    "p_offensive": 0.7152495992882969,
+    "top_contributions": [
+      {
+        "word": "被",
+        "contribution": 0.6671
+      },
+      {
+        "word": "而",
+        "contribution": 0.2644
+      },
+      {
+        "word": "说",
+        "contribution": 0.1735
+      },
+      {
+        "word": "的",
+        "contribution": 0.1319
+      },
+      {
+        "word": "不是",
+        "contribution": 0.1172
+      },
+      {
+        "word": "行为",
+        "contribution": 0.1043
+      },
+      {
+        "word": "这种",
+        "contribution": 0.0944
+      },
+      {
+        "word": "视频",
+        "contribution": 0.0866
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 1.5950129334591363,
+    "logit": 0.9210185621233039,
+    "out_of_vocabulary": [
+      "事会",
+      "侵犯",
+      "做出",
+      "冒犯",
+      "女方",
+      "有种",
+      "隐私"
+    ],
+    "user_label": "0"
+  },
+  {
+    "case_id": "E03",
+    "source_row": 14391,
+    "text": "你又没说你用四川话念的",
+    "reference": 0,
+    "prediction": 1,
+    "p_offensive": 0.6725256898798917,
+    "top_contributions": [
+      {
+        "word": "你",
+        "contribution": 0.7622
+      },
+      {
+        "word": "说",
+        "contribution": 0.4151
+      },
+      {
+        "word": "没",
+        "contribution": 0.2303
+      },
+      {
+        "word": "用",
+        "contribution": -0.219
+      },
+      {
+        "word": "又",
+        "contribution": 0.1261
+      },
+      {
+        "word": "的",
+        "contribution": 0.0789
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 1.3936250730299051,
+    "logit": 0.7196307016940727,
+    "out_of_vocabulary": [
+      "四川话",
+      "念"
+    ],
+    "user_label": "0"
+  },
+  {
+    "case_id": "E04",
+    "source_row": 11131,
+    "text": "严重，咋不严重啊？,中华人民共和国外国人永久居留身份证,如何评价中科院巴基斯坦籍留学生欺骗中国女性偷拍性交视频？,如何看待电子科大微博为巴基斯坦留学生招女友？,如何看待哈尔滨商业大学要求部分女生让出寝室给外国橄榄球运动员居住？",
+    "reference": 1,
+    "prediction": 0,
+    "p_offensive": 0.3821596211942518,
+    "top_contributions": [
+      {
+        "word": "女性",
+        "contribution": 0.1805
+      },
+      {
+        "word": "不",
+        "contribution": 0.1182
+      },
+      {
+        "word": "严重",
+        "contribution": 0.0961
+      },
+      {
+        "word": "如何",
+        "contribution": -0.0921
+      },
+      {
+        "word": "啊",
+        "contribution": -0.068
+      },
+      {
+        "word": "咋",
+        "contribution": 0.0611
+      },
+      {
+        "word": "女友",
+        "contribution": -0.0601
+      },
+      {
+        "word": "大学",
+        "contribution": -0.0582
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 0.19360261182029478,
+    "logit": -0.4803917595155376,
+    "out_of_vocabulary": [
+      "中华人民共和国",
+      "中科院",
+      "偷拍",
+      "博为",
+      "哈尔滨",
+      "商业",
+      "大微",
+      "居住",
+      "居留",
+      "巴基斯坦",
+      "性交",
+      "招",
+      "橄榄球",
+      "欺骗",
+      "永久",
+      "电子科",
+      "籍",
+      "让出",
+      "身份证",
+      "运动员"
+    ],
+    "user_label": "U"
+  },
+  {
+    "case_id": "E05",
+    "source_row": 13746,
+    "text": "小偷那个亲眼见过，俩新疆妹子一前一后接应偷东西，我呆呆的站着看了半天不知道是不是要报警，还好闺蜜拉着我赶紧跑了，万一人家是一个团伙那我可就逼了。",
+    "reference": 1,
+    "prediction": 0,
+    "p_offensive": 0.4004848221807696,
+    "top_contributions": [
+      {
+        "word": "就",
+        "contribution": 0.167
+      },
+      {
+        "word": "不",
+        "contribution": 0.1601
+      },
+      {
+        "word": "新疆",
+        "contribution": -0.151
+      },
+      {
+        "word": "是不是",
+        "contribution": 0.1475
+      },
+      {
+        "word": "要",
+        "contribution": 0.1131
+      },
+      {
+        "word": "那",
+        "contribution": 0.1065
+      },
+      {
+        "word": "一个",
+        "contribution": -0.1052
+      },
+      {
+        "word": "俩",
+        "contribution": -0.1021
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 0.2705489483391679,
+    "logit": -0.40344542299666447,
+    "out_of_vocabulary": [
+      "一前一后",
+      "亲眼",
+      "偷东西",
+      "呆呆",
+      "团伙",
+      "妹子",
+      "小偷",
+      "报警",
+      "接应",
+      "赶紧",
+      "闺蜜拉着"
+    ],
+    "user_label": "0"
+  },
+  {
+    "case_id": "E06",
+    "source_row": 8831,
+    "text": "泉州人认为漳州人懒，滑。",
+    "reference": 1,
+    "prediction": 0,
+    "p_offensive": 0.4015379416621043,
+    "top_contributions": [
+      {
+        "word": "懒",
+        "contribution": 0.2037
+      },
+      {
+        "word": "认为",
+        "contribution": 0.0713
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 0.2749332716403836,
+    "logit": -0.3990610996954488,
+    "out_of_vocabulary": [
+      "泉州人",
+      "滑",
+      "漳州人"
+    ],
+    "user_label": "0"
+  },
+  {
+    "case_id": "E07",
+    "source_row": 3277,
+    "text": "这个葛老我实在是想不明白他怎么爬上去的，一个黑人当了长安的地下皇帝也就算了，这种玩意不管人种，放在中国传统文化里面但凡是个官他不小心应对就得完犊子，怎么能那么嚣张？？？？？在官面前杀人？不怕再来一次大唐cqb？",
+    "reference": 1,
+    "prediction": 0,
+    "p_offensive": 0.4938064988848514,
+    "top_contributions": [
+      {
+        "word": "不",
+        "contribution": 0.2704
+      },
+      {
+        "word": "杀人",
+        "contribution": 0.1416
+      },
+      {
+        "word": "就",
+        "contribution": 0.141
+      },
+      {
+        "word": "他",
+        "contribution": -0.1397
+      },
+      {
+        "word": "文化",
+        "contribution": -0.123
+      },
+      {
+        "word": "一个",
+        "contribution": -0.0889
+      },
+      {
+        "word": "里面",
+        "contribution": -0.0786
+      },
+      {
+        "word": "黑人",
+        "contribution": 0.0785
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 0.649219099668793,
+    "logit": -0.02477527166703941,
+    "out_of_vocabulary": [
+      "cqb",
+      "凡是",
+      "嚣张",
+      "地下",
+      "大唐",
+      "官",
+      "应对",
+      "放在",
+      "爬上去",
+      "犊子",
+      "玩意",
+      "皇帝",
+      "葛老",
+      "长安",
+      "面前"
+    ],
+    "user_label": "1"
+  },
+  {
+    "case_id": "E08",
+    "source_row": 16657,
+    "text": "为什么我想的是封建社会压迫女子不让改嫁。。。",
+    "reference": 1,
+    "prediction": 0,
+    "p_offensive": 0.4877952874701319,
+    "top_contributions": [
+      {
+        "word": "为什么",
+        "contribution": 0.3311
+      },
+      {
+        "word": "压迫",
+        "contribution": 0.189
+      },
+      {
+        "word": "想",
+        "contribution": 0.1089
+      },
+      {
+        "word": "是",
+        "contribution": -0.0908
+      },
+      {
+        "word": "的",
+        "contribution": 0.0792
+      },
+      {
+        "word": "我",
+        "contribution": 0.0076
+      }
+    ],
+    "intercept": -0.6739943713358324,
+    "sum_contributions": 0.6251658219991217,
+    "logit": -0.04882854933671066,
+    "out_of_vocabulary": [
+      "不让",
+      "女子",
+      "封建社会",
+      "改嫁"
+    ],
+    "user_label": "0"
+  }
+]

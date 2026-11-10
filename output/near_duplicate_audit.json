@@ -1,0 +1,4 @@
+{
+  "method": "char 3-5gram TF-IDF cosine >=0.65, followed by sequence comparison; heuristic, not exhaustive semantic detection",
+  "pairs": []
+}

@@ -1,0 +1,40 @@
+{
+  "train": {
+    "rows": 25726,
+    "labels": {
+      "1": 12723,
+      "0": 13003
+    },
+    "empty": 0,
+    "duplicate_excess": 70,
+    "conflicting_texts": 13,
+    "sha256": "16ca7955bdcaf90f5d8ac39e51eb3eda15320caa1e730ed45cb5e8ca8cd0d5e8"
+  },
+  "dev": {
+    "rows": 6431,
+    "labels": {
+      "1": 3211,
+      "0": 3220
+    },
+    "empty": 0,
+    "duplicate_excess": 1,
+    "conflicting_texts": 0,
+    "sha256": "28e67a26815aa1852449ba06919e51c07060d146e2bd23101cc0137a0ff94b7c"
+  },
+  "test": {
+    "rows": 5323,
+    "labels": {
+      "1": 2107,
+      "0": 3216
+    },
+    "empty": 0,
+    "duplicate_excess": 3,
+    "conflicting_texts": 0,
+    "sha256": "b06d31481f0d558b6dc8140408938abe8dba8083cd9976b4ba8f5c837fbe78ed"
+  },
+  "cross_split_exact_overlap": {
+    "train_dev": 34,
+    "train_test": 39,
+    "dev_test": 16
+  }
+}

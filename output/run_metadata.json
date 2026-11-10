@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "model": "TF-IDF unigrams min_df=2 + LogisticRegression C=1 max_iter=2000",
+  "stopwords": "none; punctuation removed; negation retained",
+  "normalization": "no script conversion; whitespace ignored only for duplicate comparison",
+  "conflicting_unique_texts_all_splits": 27,
+  "reviewed_texts_excluded": 12,
+  "eligible_train": 25587,
+  "model_data": 1000,
+  "training": 800,
+  "held_out_test": 200,
+  "application": 100,
+  "application_sampling": "25 per fine-grained category; not natural prevalence",
+  "unused": "official dev not used",
+  "duplicate_check": "exact after whitespace removal; semantic/near duplicates not fully excluded",
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "jieba": "0.42.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "raw_sha256": {
+    "train": "16ca7955bdcaf90f5d8ac39e51eb3eda15320caa1e730ed45cb5e8ca8cd0d5e8",
+    "dev": "28e67a26815aa1852449ba06919e51c07060d146e2bd23101cc0137a0ff94b7c",
+    "test": "b06d31481f0d558b6dc8140408938abe8dba8083cd9976b4ba8f5c837fbe78ed"
+  }
+}

@@ -1,0 +1,8 @@
+jieba==0.42.1
+scikit-learn==1.9.1
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+joblib==1.6.0
+Markdown==3.11
+reportlab==5.0.1

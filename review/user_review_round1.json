@@ -1,0 +1,149 @@
+{
+  "note": "理由為助手摘要；標籤與信心依使用者原答，未依揭示答案修改。R010/R011/R012正規化為R10/R11/R12。0/U不強制歸類。",
+  "records": [
+    {
+      "review_id": "R01",
+      "source": "train.csv",
+      "csv_record_number_including_header": 4778,
+      "source_id": "4664",
+      "original_label": "0",
+      "topic": "gender",
+      "text": "我觉得没必要增肌这么夸张，一般有均匀肌肉线条好看就行了，太夸张令我一个男的都觉得不好看",
+      "user_label": "0",
+      "user_confidence": "中",
+      "user_reason_summary": "針對增肌作負面評價；疑問：針對事件是否一定非冒犯。"
+    },
+    {
+      "review_id": "R02",
+      "source": "train.csv",
+      "csv_record_number_including_header": 11812,
+      "source_id": "7438",
+      "original_label": "1",
+      "topic": "race",
+      "text": "你根本不了解美国。排华法案的历史要华人承受吗？华人一直是种族歧视的受害者好吧",
+      "user_label": "U",
+      "user_confidence": "中",
+      "user_reason_summary": "可能貶低人的無知；疑問：負面評價是否等於侮辱。"
+    },
+    {
+      "review_id": "R03",
+      "source": "train.csv",
+      "csv_record_number_including_header": 13258,
+      "source_id": "4656",
+      "original_label": "1",
+      "topic": "race",
+      "text": "这帮子SB有没有去看看监狱中的种族比例？是否给白人和华人以“优厚”的入狱条件，以提高他们在监狱中所占数量比例？,有意思吗？！,拜托把钱花在基础教育和职业教育上，把畜生教育成人，",
+      "user_label": "1",
+      "user_confidence": "高",
+      "user_reason_summary": "SB與畜生是直接辱罵；另注意教育建議可能暗含貶低。"
+    },
+    {
+      "review_id": "R04",
+      "source": "train.csv",
+      "csv_record_number_including_header": 18269,
+      "source_id": "6726",
+      "original_label": "0",
+      "topic": "region",
+      "text": "爱奇艺之前还歧视河南人。我是河南人，所以我不用爱奇艺。",
+      "user_label": "0",
+      "user_confidence": "高",
+      "user_reason_summary": "反對歧視河南人。"
+    },
+    {
+      "review_id": "R05",
+      "source": "train.csv",
+      "csv_record_number_including_header": 7448,
+      "source_id": "3237",
+      "original_label": "0",
+      "topic": "gender",
+      "text": "T应该比P好辨别一些。",
+      "user_label": "0",
+      "user_confidence": "高",
+      "user_reason_summary": "認為是中立描述。"
+    },
+    {
+      "review_id": "R06",
+      "source": "train.csv",
+      "csv_record_number_including_header": 17359,
+      "source_id": "854",
+      "original_label": "1",
+      "topic": "region",
+      "text": "嗯，如果真是家里有船还搞这些有的没的，那可能是没看好你，想恶心你，又或者不想他儿子留在上海，还有，不要一口一个沙东人，只是你遇到了一对不怎么样的公婆，你公婆不能代表我们青岛人！",
+      "user_label": "U",
+      "user_confidence": "低",
+      "user_reason_summary": "缺少上下文，難以理解。"
+    },
+    {
+      "review_id": "R07",
+      "source": "train.csv",
+      "csv_record_number_including_header": 3519,
+      "source_id": "4469",
+      "original_label": "1",
+      "topic": "gender",
+      "text": "对于所有的伤害自己的人，当然是谁好下手惩罚谁啊。真有那么多为什么，怎么不问为什么拐卖妇女",
+      "user_label": "0",
+      "user_confidence": "低",
+      "user_reason_summary": "暫判事件表態，後半可能暗示多管閒事，語境不足。"
+    },
+    {
+      "review_id": "R08",
+      "source": "train.csv",
+      "csv_record_number_including_header": 1195,
+      "source_id": "9177",
+      "original_label": "0",
+      "topic": "race",
+      "text": "好厉害啊，马上关注你，特别是回复印度人的话",
+      "user_label": "0/U",
+      "user_confidence": "低",
+      "user_reason_summary": "表面讚賞，但涉及回覆印度人的內容，可能反諷，語境不足。"
+    },
+    {
+      "review_id": "R09",
+      "source": "train.csv",
+      "csv_record_number_including_header": 2582,
+      "source_id": "2359",
+      "original_label": "1",
+      "topic": "region",
+      "text": "看了这个，想起上次知乎有个地域黑，举例说因为东北那么多制毒贩毒的，所以东北人才不招他待见，东北人被歧视要自身找原因。就一个字，服！估计他老人家是越南人，才会把把广东广西云南等地都当成东北人。",
+      "user_label": "U",
+      "user_confidence": "低",
+      "user_reason_summary": "轉述後又猜對方是越南人，可能以刻板印象侮辱，未確定。"
+    },
+    {
+      "review_id": "R10",
+      "source": "train.csv",
+      "csv_record_number_including_header": 5317,
+      "source_id": "9673",
+      "original_label": "0",
+      "topic": "race",
+      "text": "美国是RA吧，英国就是全职工作，像我这样的生化环材，那就是9117，而且不单中国人这样，英国人，印度人，中东人统统这样，双休日实验楼里全是人，各色人种川流不息。",
+      "user_label": "0",
+      "user_confidence": "高",
+      "user_reason_summary": "描述自身觀察。"
+    },
+    {
+      "review_id": "R11",
+      "source": "train.csv",
+      "csv_record_number_including_header": 24959,
+      "source_id": "2939",
+      "original_label": "1",
+      "topic": "gender",
+      "text": "我也觉得萧炎不爱美杜莎！而且书的前几十章萧炎没事就威胁说强奸什么的，还说潇玉穿成那样就是为了给男的看的",
+      "user_label": "0",
+      "user_confidence": "中",
+      "user_reason_summary": "描述小說角色關係與印象，未認為是侮辱，但承認可能分歧。"
+    },
+    {
+      "review_id": "R12",
+      "source": "train.csv",
+      "csv_record_number_including_header": 20021,
+      "source_id": "5933",
+      "original_label": "0",
+      "topic": "region",
+      "text": "你怕是在说梦话吧？ 国内除了武汉和部分湖北城市，其他基本控制住了，韩国持续爆发，离控制住还远呢！",
+      "user_label": "1",
+      "user_confidence": "中",
+      "user_reason_summary": "說夢話可能侮辱不理智，也可能只是反駁論點。"
+    }
+  ]
+}
